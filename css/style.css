@@ -308,10 +308,17 @@ template {
   display: none;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dotted rgb(161, 27, 27);
+  outline-offset: 5px;
 }
 
 html {
@@ -323,7 +330,7 @@ html {
 img {
   display: flex;
   -o-object-fit: cover;
-     object-fit: cover; /* contain */
+     object-fit: cover;
 }
 
 a {
@@ -331,11 +338,17 @@ a {
   display: inline-block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -347,11 +360,203 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.active-text {
+  color: #0b0706;
+}
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic_latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.09;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.primary-btn {
+  padding: 1.2rem 3.2rem;
+  background-color: #70c174;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.secondary-btn {
+  border-radius: 4px;
+  padding: 1.2rem 3.2rem;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1d2130;
+}
+
+.navbar-btn {
+  padding: 1.2rem 3.2rem;
+  background-color: #1d2130;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.site-divider {
+  width: 7.2rem;
+  height: 0rem;
+  border: 1px solid #1d2130;
+}
+
+.header {
+  background-color: #fff;
+  padding: 1.2rem 0rem;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__site-logo_link {
+  margin-right: auto;
+}
+
+.header__site-logo_img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header__site-nav_list {
+  display: flex;
+  gap: 4rem;
+  margin-right: 4rem;
+}
+
+.header__site-nav_link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #525560;
+}
+
+.header__site-nav_link-active {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #0b0706;
+}
+
+.footer {
+  background-color: #0b0706;
+}
+
+.footer__wrapper {
+  display: flex;
+  padding: 9.6rem 0rem;
+}
+
+.footer__mini-wrapper_left {
+  margin-right: 12rem;
+}
+
+.footer__mini-wrapper_center {
+  display: flex;
+  margin-right: auto;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 366px;
+}
+
+.footer__wrapper-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer__list a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.footer-nav__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.footer__mini-wrapper_right {
+  width: 100%;
+  max-width: 544px;
+}
+
+.footer__title {
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.footer-btn {
+  border: none;
+  position: absolute;
+}
+
+.footer__form {
+  position: relative;
+}
+
+.footer__input_email {
+  width: 100%;
+  max-width: 405px;
+  padding: 1.2rem 0rem 1.1rem 2.4rem;
+  background-color: #0b0706;
+  border: 1px solid rgba(235, 240, 249, 0.3019607843);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
 }
 
 main {

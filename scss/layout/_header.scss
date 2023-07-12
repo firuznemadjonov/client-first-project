@@ -1,0 +1,26 @@
+.header {
+  background-color: #fff;
+  padding: 1.2rem 0rem;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__site-logo_link {
+  margin-right: auto;
+}
+.header__site-logo_img {
+  object-fit: contain;
+}
+.header__site-nav_list {
+  display: flex;
+  gap: 4rem;
+  margin-right: 4rem;
+}
+.header__site-nav_link {
+  @include fontSettings($text-font-size, 500, $text-lh, $secondary-text);
+}
+
+.header__site-nav_link-active {
+  @include fontSettings($text-font-size, 500, $text-lh, $black);
+}

@@ -1,9 +1,7 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @include starReset;
 }
 
 *:focus {
@@ -49,9 +47,12 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px; // *
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5rem; // *
-  padding-right: 5rem; // *
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.active-text {
+  color: $black;
 }
