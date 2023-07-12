@@ -8,12 +8,7 @@
   border-radius: 4px;
   padding: 1.2rem 3.2rem;
   background-color: $white;
-  @include fontSettings(
-    $text-font-size,
-    $text-font-weight,
-    $text-lh,
-    $primary-text
-  );
+  @include fontSettings($text-font-size, 500, $text-lh, $primary-text);
 }
 .navbar-btn {
   padding: 1.2rem 3.2rem;
