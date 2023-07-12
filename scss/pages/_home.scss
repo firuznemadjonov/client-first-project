@@ -140,3 +140,292 @@ main {
   }
 }
 // SECTION NATURE END
+
+// SECTION COMING BIRTH START
+.coming-birth {
+  background-color: $green-tertiary;
+}
+.coming-birth__wrappper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
+.coming-birth__divider_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.coming-birth_title_text {
+  text-transform: uppercase;
+  @include fontSettings(1.6rem, 700, 1.17, $primary-text);
+  letter-spacing: 2px;
+}
+.coming-birth__box {
+  display: flex;
+  gap: 9.6rem;
+  justify-content: end;
+}
+.coming-birth__info_wrapper {
+  display: flex;
+  flex-direction: column;
+  @include wrapperSettings(608px);
+  h2 {
+    @include fontSettings(
+      $heading2-font-size,
+      700,
+      $heading1-lh,
+      $primary-text
+    );
+    margin-bottom: 1.6rem;
+  }
+  p {
+    @include fontSettings(1.6rem, 400, 1.6, $secondary-text);
+    margin-bottom: 3.2rem;
+  }
+}
+.coming-birth-bg-img {
+  width: 480px;
+  height: 658px;
+  background-image: url(../../images/index/coming-birth-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coming-birth__box_info {
+  display: flex;
+  flex-direction: column;
+}
+.coming-birth__mini-box_info {
+  display: flex;
+  border-left: 1px solid $border;
+  @include wrapperSettings(460px);
+  img {
+    margin: 0rem 2.4rem;
+  }
+}
+.mini-box-info__text_wrapper {
+  h4 {
+    @include fontSettings(2.4rem, 700, 1.17, $primary-text);
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 2.4rem;
+  }
+}
+// SECTION COMING BIRTH END
+
+// CREATING START
+
+.creating__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 9.6rem 0rem;
+}
+.creating__divider_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.site-divider {
+}
+.creating__divider {
+}
+.creating_title_text {
+  text-transform: uppercase;
+  @include fontSettings(1.6rem, 700, 1.17, $primary-text);
+  letter-spacing: 2px;
+}
+.creating__title_wrapper {
+  @include wrapperSettings(640px);
+  h2 {
+    @include fontSettings(
+      $heading2-font-size,
+      700,
+      $heading1-lh,
+      $primary-text
+    );
+    margin-bottom: 6.4rem;
+    margin-left: 11rem;
+  }
+}
+.creating__images_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.images-wrapper__box_mission {
+  background-image: linear-gradient(rgba(11, 7, 6, 0.5), rgba(11, 7, 6, 0.5)),
+    url(../../images/index/creating-bg-img-40k.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 41.1rem;
+  height: 42.1rem;
+  border-radius: 1.2rem;
+  h4 {
+    @include fontSettings($heading3-font-size, 700, $heading3-lh, $white);
+  }
+}
+.images-wrapper__box_weekly {
+  background-image: linear-gradient(rgba(11, 7, 6, 0.5), rgba(11, 7, 6, 0.5)),
+    url(../../images/index/creating-bg-img-weekly.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 41.1rem;
+  height: 42.1rem;
+  border-radius: 1.2rem;
+  h4 {
+    @include fontSettings($heading3-font-size, 700, $heading3-lh, $white);
+  }
+}
+.images-wrapper__box_wildlife {
+  background-image: linear-gradient(rgba(11, 7, 6, 0.5), rgba(11, 7, 6, 0.5)),
+    url(../../images/index/creating-bg-img-wildlife.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 41.1rem;
+  height: 42.1rem;
+  border-radius: 1.2rem;
+  h4 {
+    @include fontSettings($heading3-font-size, 700, $heading3-lh, $white);
+  }
+}
+.creating-iamges__text_wrapper {
+  @include wrapperSettings(315px);
+  padding-top: 8rem;
+  margin-left: 4.8rem;
+  h4 {
+    @include fontSettings($heading3-font-size, 700, $heading3-lh, $white);
+    margin-bottom: 1.6rem;
+  }
+  p {
+    @include fontSettings(
+      $paragraph-font-size,
+      $paragraph-font-weight,
+      $paragraph-lh,
+      $white
+    );
+    margin-bottom: 6.4rem;
+  }
+}
+// CREATING END
+
+// DONATION START
+.donating {
+  padding: 9.6rem 0rem;
+  background-color: $black;
+}
+.donating__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.donating__info {
+  @include wrapperSettings(611px);
+  h2 {
+    @include fontSettings(4.5rem, 700, $heading2-lh, $white);
+    margin-bottom: 1.6rem;
+  }
+  p {
+    @include fontSettings(1.6rem, 400, 1.6, $white);
+    margin-bottom: 3.2rem;
+  }
+}
+.donating-info__percentage_box {
+  display: flex;
+  gap: 2.4rem;
+}
+.donating-info__percentage_box:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.donating__percentage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  p {
+    @include fontSettings(1.6rem, 400, 1.6, $white);
+    margin-bottom: 0;
+  }
+}
+.donating__bg {
+  display: flex;
+  width: 37.5rem;
+  height: 37.5rem;
+  background-image: url(../../images/index/donation-img-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+}
+// DONATION END
+
+// GREENER START
+
+.greener__wrapper {
+  background-image: linear-gradient(rgba(11, 7, 6, 0.5), rgba(11, 7, 6, 0.5)),
+    url(../../images/index/greener-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.2rem;
+  margin: 9.6rem 0rem;
+  padding: 9.3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.greener__text_wrapper {
+  @include wrapperSettings(631px);
+  h2 {
+    @include fontSettings($heading2-font-size, 700, $heading2-lh, $white);
+    text-align: center;
+  }
+}
+.greener-btn__wrapper {
+  display: flex;
+  gap: 3.2rem;
+}
+
+// GREENER END
+
+// SECTION OUR NEWS START
+
+.our-news__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9.6rem;
+}
+.our-news__title_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.8rem;
+  h2 {
+    @include fontSettings(4rem, 500, 1.4, $primary-text);
+  }
+  span {
+    flex-grow: 1;
+    margin-left: 2.4rem;
+    height: 1px;
+    background-color: $border;
+  }
+}
+.our-news__info_wrapper {
+  display: flex;
+}
+.info-wrapper__box {
+  @include wrapperSettings(302px);
+  img {
+    margin-bottom: 1.6rem;
+  }
+  h4 {
+    @include fontSettings(2rem, 500, 1.5, $black);
+    margin-bottom: 8px;
+  }
+  p {
+    @include fontSettings(1.6rem, 400, 1.2, $secondary-text);
+  }
+}
+// SECTION OUR NEWS END
