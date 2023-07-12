@@ -408,7 +408,7 @@ body {
   background-color: #70c174;
   border-radius: 4px;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.6;
   color: #fff;
 }
@@ -418,7 +418,7 @@ body {
   padding: 1.2rem 3.2rem;
   background-color: #fff;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.6;
   color: #1d2130;
 }
@@ -428,7 +428,7 @@ body {
   background-color: #1d2130;
   border-radius: 4px;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.6;
   color: #fff;
 }
@@ -1033,6 +1033,7 @@ main {
 
 .our-news__info_wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .info-wrapper__box {
@@ -1054,4 +1055,98 @@ main {
   font-weight: 400;
   line-height: 1.2;
   color: #525560;
+}
+
+.our-events__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9.6rem;
+}
+
+.our-events__title_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+.our-events__title_wrapper h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #1d2130;
+}
+.our-events__title_wrapper span {
+  flex-grow: 1;
+  margin-left: 2.4rem;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.our-events__info_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-events__info_box {
+  background-color: #bef3c0;
+  border-radius: 8px;
+  display: flex;
+  padding-top: 3.2rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  max-width: 610px;
+  position: relative;
+  gap: 2.4rem;
+}
+
+.info__date_box {
+  margin-left: 4rem;
+}
+.info__date_box h2 {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1d2130;
+}
+.info__date_box p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #1d2130;
+}
+
+.info__text_box {
+  width: 100%;
+  max-width: 381px;
+}
+.info__text_box h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1d2130;
+}
+
+.info__divider_box {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+  margin-bottom: 8px;
+}
+.info__divider_box p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #1d2130;
+  letter-spacing: 2px;
+}
+
+.our-events__arrow_link {
+  position: absolute;
+  right: 4.8rem;
+  top: 6.4rem;
+}
+.our-events__arrow_link img {
+  padding: 2.3rem 2.1rem;
+  background-color: #fff;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
