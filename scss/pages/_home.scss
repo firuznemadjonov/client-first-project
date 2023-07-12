@@ -414,6 +414,7 @@ main {
 }
 .our-news__info_wrapper {
   display: flex;
+  justify-content: space-between;
 }
 .info-wrapper__box {
   @include wrapperSettings(302px);
@@ -429,3 +430,82 @@ main {
   }
 }
 // SECTION OUR NEWS END
+
+// SECTION OUR EVENTS START
+
+.our-events__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9.6rem;
+}
+.our-events__title_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.8rem;
+  h2 {
+    @include fontSettings(4rem, 500, 1.4, $primary-text);
+  }
+  span {
+    flex-grow: 1;
+    margin-left: 2.4rem;
+    height: 1px;
+    background-color: $border;
+  }
+}
+
+.our-events__info_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.our-events__info_box {
+  background-color: $green-secondary;
+  border-radius: 8px;
+  display: flex;
+  padding-top: 3.2rem;
+  padding-bottom: 4rem;
+  @include wrapperSettings(610px);
+  position: relative;
+  gap: 2.4rem;
+}
+.info__date_box {
+  margin-left: 4rem;
+  h2 {
+    @include fontSettings(
+      $heading2-font-size,
+      500,
+      $heading2-lh,
+      $primary-text
+    );
+  }
+  p {
+    text-transform: uppercase;
+    @include fontSettings(1.6rem, 500, 1.17, $primary-text);
+  }
+}
+.info__text_box {
+  @include wrapperSettings(381px);
+  h3 {
+    @include fontSettings(2.8rem, 700, 1.5, $primary-text);
+  }
+}
+.info__divider_box {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+  margin-bottom: 8px;
+  p {
+    @include fontSettings(1.6rem, 500, 1.17, $primary-text);
+    letter-spacing: 2px;
+  }
+}
+.our-events__arrow_link {
+  position: absolute;
+  right: 4.8rem;
+  top: 6.4rem;
+  img {
+    padding: 2.3rem 2.1rem;
+    background-color: $white;
+    border-radius: 50%;
+  }
+}
+// SECTION OUR EVENTS END
