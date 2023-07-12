@@ -1,0 +1,55 @@
+.footer {
+  background-color: $black;
+}
+.footer__wrapper {
+  display: flex;
+  padding: 9.6rem 0rem;
+}
+.footer__mini-wrapper_left {
+  margin-right: 12rem;
+}
+.footer__mini-wrapper_center {
+  display: flex;
+  margin-right: auto;
+  justify-content: space-between;
+  @include wrapperSettings(366px);
+}
+.footer__wrapper-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  a {
+    @include fontSettings(1.4rem, $text-font-weight, 1.6, $white);
+  }
+}
+.footer-nav__title {
+  @include fontSettings($text-font-size, 700, $text-lh, $white);
+}
+.footer__mini-wrapper_right {
+  @include wrapperSettings(544px);
+}
+.footer__title {
+  margin-bottom: 3.2rem;
+  @include fontSettings(4rem, 700, 1.4, $white);
+}
+.footer-btn {
+  border: none;
+  position: absolute;
+}
+
+.footer__form {
+  position: relative;
+}
+.footer__input_email {
+  @include wrapperSettings(405px);
+  padding: 1.2rem 0rem 1.1rem 2.4rem;
+  background-color: $black;
+  border: 1px solid #ebf0f94d;
+  border-radius: 4px;
+  @include fontSettings($text-font-size, $text-font-weight, $text-lh, $white);
+}

@@ -1,3 +1,15 @@
-@mixin fontSettings() {
-  font-size: ;
+@mixin fontSettings($fontSize, $fonWeight, $lineHeight, $color) {
+  font-size: $fontSize;
+  font-weight: $fonWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
+@mixin starReset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin wrapperSettings($maxWidth) {
+  width: 100%;
+  max-width: $maxWidth;
 }
