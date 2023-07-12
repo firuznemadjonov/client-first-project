@@ -407,7 +407,7 @@ body {
   padding: 1.2rem 3.2rem;
   background-color: #70c174;
   border-radius: 4px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
   color: #fff;
@@ -417,7 +417,7 @@ body {
   border-radius: 4px;
   padding: 1.2rem 3.2rem;
   background-color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
   color: #1d2130;
@@ -427,7 +427,7 @@ body {
   padding: 1.2rem 3.2rem;
   background-color: #1d2130;
   border-radius: 4px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
   color: #fff;
@@ -465,14 +465,14 @@ body {
 }
 
 .header__site-nav_link {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6;
   color: #525560;
 }
 
 .header__site-nav_link-active {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6;
   color: #0b0706;
@@ -518,7 +518,7 @@ body {
 }
 
 .footer-nav__title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.6;
   color: #fff;
@@ -540,6 +540,7 @@ body {
 .footer-btn {
   border: none;
   position: absolute;
+  right: 7px;
 }
 
 .footer__form {
@@ -553,7 +554,7 @@ body {
   background-color: #0b0706;
   border: 1px solid rgba(235, 240, 249, 0.3019607843);
   border-radius: 4px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
   color: #fff;
@@ -561,4 +562,157 @@ body {
 
 main {
   flex-grow: 1;
+}
+
+.hero {
+  background-image: url(../../images/index/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__wrapper_title {
+  width: 100%;
+  max-width: 640px;
+  padding-top: 12.8rem;
+  padding-bottom: 19.2rem;
+}
+.hero__wrapper_title h1 {
+  margin-bottom: 4.8rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.hero__title_btn-wrapper {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.hero__play-video_link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero__play-video_link p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.hero__wrapper_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6.4rem;
+}
+.hero__wrapper_bottom span {
+  flex-grow: 1;
+  margin: 0rem 2.4rem;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+.hero__wrapper_bottom p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.71;
+  color: #fff;
+}
+
+.nature__wrapper {
+  padding-top: 9.6rem;
+}
+
+.nature__hero_wrapper {
+  display: flex;
+  margin-bottom: 6.4rem;
+}
+
+.nature-bg {
+  background-image: url(../../images/index/nature-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 480px;
+  height: 578px;
+  position: relative;
+}
+.nature-bg img {
+  position: absolute;
+  top: 25.5rem;
+  right: 20rem;
+}
+
+.nature__divider {
+  margin-right: 2.4rem;
+  margin-top: 7.1rem;
+}
+
+.nature__info {
+  padding-top: 7.1rem;
+  margin-right: auto;
+  width: 100%;
+  max-width: 607px;
+}
+.nature__info h2 {
+  margin-bottom: 3.2rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1d2130;
+}
+
+.nature-info__title_text {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.17;
+  color: #1d2130;
+  letter-spacing: 2px;
+  margin-bottom: 3.2rem;
+}
+
+.nature-info__text {
+  margin-bottom: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #525560;
+}
+
+.nature__supporters_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6.5rem;
+}
+
+.supporters__text_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.supporters__text_wrapper p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #1d2130;
+}
+.supporters__text_wrapper span {
+  flex-grow: 1;
+  margin-left: 2.4rem;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.supporters__logo_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.supporters__logo_wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */

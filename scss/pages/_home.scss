@@ -1,3 +1,142 @@
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
+
+// SECTION HERO START
+.hero {
+  background-image: url(../../images/index/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__wrapper_title {
+  @include wrapperSettings(640px);
+  padding-top: 12.8rem;
+  padding-bottom: 19.2rem;
+  h1 {
+    margin-bottom: 4.8rem;
+    @include fontSettings(
+      $home-heading-font-size,
+      700,
+      $home-heading-lh,
+      $white
+    );
+  }
+}
+
+.hero__title_btn-wrapper {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.secondary-btn {
+}
+.hero__play-video_link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  p {
+    @include fontSettings(1.6rem, 500, 1.15, $white);
+  }
+}
+
+.hero__wrapper_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6.4rem;
+  span {
+    flex-grow: 1;
+    margin: 0rem 2.4rem;
+    height: 1px;
+    background-color: $border;
+  }
+  p {
+    @include fontSettings(1.8rem, 500, 1.71, $white);
+  }
+}
+// SECTION HERO END
+// SECTION NATURE START
+.nature {
+}
+.nature__wrapper {
+  padding-top: 9.6rem;
+}
+.nature__hero_wrapper {
+  display: flex;
+  margin-bottom: 6.4rem;
+}
+.site-divider {
+}
+.nature-bg {
+  background-image: url(../../images/index/nature-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 480px;
+  height: 578px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 25.5rem;
+    right: 20rem;
+  }
+}
+.nature__divider {
+  margin-right: 2.4rem;
+  margin-top: 7.1rem;
+}
+.nature__info {
+  padding-top: 7.1rem;
+  margin-right: auto;
+
+  @include wrapperSettings(607px);
+  h2 {
+    margin-bottom: 3.2rem;
+    @include fontSettings(
+      $heading2-font-size,
+      700,
+      $heading2-lh,
+      $primary-text
+    );
+  }
+}
+.nature-info__title_text {
+  text-transform: uppercase;
+  @include fontSettings(1.6rem, 700, 1.17, $primary-text);
+  letter-spacing: 2px;
+  margin-bottom: 3.2rem;
+}
+.nature-info__text {
+  margin-bottom: 4.8rem;
+  @include fontSettings(1.6rem, 400, 1.6, $secondary-text);
+}
+.nature__supporters_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6.5rem;
+}
+.supporters__text_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  p {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include fontSettings(1.6rem, 500, 1.17, $primary-text);
+  }
+  span {
+    flex-grow: 1;
+    margin-left: 2.4rem;
+    height: 1px;
+    background-color: $border;
+  }
+}
+.supporters__logo_wrapper {
+  display: flex;
+  justify-content: space-between;
+  img {
+    object-fit: contain;
+  }
+}
+// SECTION NATURE END

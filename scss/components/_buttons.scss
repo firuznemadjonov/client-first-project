@@ -21,3 +21,10 @@
   border-radius: 4px;
   @include fontSettings($text-font-size, $text-font-weight, $text-lh, $white);
 }
+
+// SITE DIVIDER
+.site-divider {
+  width: 7.2rem;
+  height: 0rem;
+  border: 1px solid $primary-text;
+}
