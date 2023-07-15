@@ -1,3 +1,80 @@
 main {
     flex-grow: 1;
 }
+.header {
+    
+}
+.container {
+}
+.header-content {
+    
+}
+.header-icons {
+    padding-top: 4rem;
+    display: flex;
+    a{
+        margin-right: auto;
+    }
+}
+
+.main {
+}
+.practic {
+}
+.practic-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+}
+.practic-list {
+display: flex;
+justify-content: space-between;
+}
+.practic-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 345px;
+}
+.project {
+}
+.project-content {
+}
+.project-title {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 14rem;
+    
+    h2{
+        margin-right: auto;
+        
+    }
+    h6{
+        a{
+            border-bottom: 2px solid $dark-grey;
+            color: $white;
+        }
+    }
+}
+.adams-projects {
+    
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14rem;
+}
+.adms-project_list {
+    display: flex;
+    gap: 3rem;
+    padding-top: 8rem;
+    h4{
+        padding-top: 2rem;
+    }
+    
+}
+.adams-project_item {
+    span{
+        display: flex;
+        gap: 1.8rem;
+        padding-top: 0.7rem;
+    }
+}
